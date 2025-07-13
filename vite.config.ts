@@ -12,6 +12,7 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
+  base: '/tempet_homepage/', // 🔽 GitHub Pages用に指定
   plugins: [react(), TanStackRouterVite() // 追加！
   ],
   optimizeDeps: {
